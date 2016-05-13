@@ -40,7 +40,7 @@
     "@zkochan/read-pkg-up": "^1.0.2",
     "github-url-to-object": "^2.2.1",
     "magic-hook": "^1.0.0",
-    "mos-core": "0.0.0",
+    "mos-core": "^0.1.0",
     "remi": "^1.0.0",
     "remi-runner": "^1.0.0",
     "vfile": "^1.4.0"
