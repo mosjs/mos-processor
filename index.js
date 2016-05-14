@@ -34,7 +34,10 @@ module.exports = function mos (md, plugins) {
   const register = createRegister(processor)
 
   return getMarkdownMeta(md.filePath)
-    .then(meta => register(plugins.map(plugin => ({ register: plugin, options: Object.assign({}, md, meta) }))))
+    .then(meta => register(plugins.map(plugin => ({
+      register: plugin.register || plugin,
+      options: Object.assign({}, md, meta, { options: plugin.options || {} }),
+    }))))
     .then(() => processor)
 }
 

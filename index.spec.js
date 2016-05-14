@@ -33,4 +33,23 @@ describe('mos', () => {
       })
       .catch(done)
   })
+
+  it('should pass plugin options to the plugin', done => {
+    return mos({}, [{
+      register: plugiator.anonymous((mos, md) => {
+        expect(md.options).to.eq('foo')
+        done()
+      }),
+      options: 'foo',
+    }]).catch(done)
+  })
+
+  it('should pass default plugin options to the plugin when none passed', done => {
+    return mos({}, [
+      plugiator.anonymous((mos, md) => {
+        expect(md.options).to.eql({})
+        done()
+      }),
+    ]).catch(done)
+  })
 })
