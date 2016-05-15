@@ -7,7 +7,7 @@
 <!--/@-->
 
 <!--@shields.flatSquare('npm', 'travis', 'coveralls')-->
-[![NPM version](https://img.shields.io/npm/v/mos-processor.svg?style=flat-square)](https://www.npmjs.com/package/mos-processor) [![Build status for master](https://img.shields.io/travis/zkochan/mos-processor/master.svg?style=flat-square)](https://travis-ci.org/zkochan/mos-processor) [![Test coverage for master](https://img.shields.io/coveralls/zkochan/mos-processor/master.svg?style=flat-square)](https://coveralls.io/r/zkochan/mos-processor?branch=master)
+[![NPM version](https://img.shields.io/npm/v/mos-processor.svg?style=flat-square)](https://www.npmjs.com/package/mos-processor) [![Build status for master](https://img.shields.io/travis/mosjs/mos-processor/master.svg?style=flat-square)](https://travis-ci.org/mosjs/mos-processor) [![Test coverage for master](https://img.shields.io/coveralls/mosjs/mos-processor/master.svg?style=flat-square)](https://coveralls.io/r/mosjs/mos-processor?branch=master)
 <!--/@-->
 
 <!--@installation()-->
@@ -33,7 +33,7 @@ const mosProcessor = require('mos-processor')
 * * *
 
 <!--@dependencies({ shield: 'flat-square' })-->
-## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/zkochan/mos-processor/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-processor/master)
+## <a name="dependencies">Dependencies</a> [![Dependency status for master](https://img.shields.io/david/mosjs/mos-processor/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-processor/master)
 
 - [@zkochan/read-pkg-up](https://github.com/zkochan/read-pkg-up): Read the closest package.json file
 - [github-url-to-object](https://github.com/zeke/github-url-to-object): Extract user, repo, and other interesting properties from GitHub URLs
@@ -46,7 +46,7 @@ const mosProcessor = require('mos-processor')
 <!--/@-->
 
 <!--@devDependencies({ shield: 'flat-square' })-->
-## <a name="dev-dependencies">Dev Dependencies</a> [![devDependency status for master](https://img.shields.io/david/dev/zkochan/mos-processor/master.svg?style=flat-square)](https://david-dm.org/zkochan/mos-processor/master#info=devDependencies)
+## <a name="dev-dependencies">Dev Dependencies</a> [![devDependency status for master](https://img.shields.io/david/dev/mosjs/mos-processor/master.svg?style=flat-square)](https://david-dm.org/mosjs/mos-processor/master#info=devDependencies)
 
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [cz-conventional-changelog](https://github.com/commitizen/cz-conventional-changelog): Commitizen adapter following the conventional-changelog format.
