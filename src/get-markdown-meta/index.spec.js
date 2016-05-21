@@ -1,10 +1,8 @@
-'use strict'
-const describe = require('mocha').describe
-const it = require('mocha').it
-const expect = require('chai').expect
-const path = require('path')
+import {describe, it} from 'mocha'
+import {expect} from 'chai'
+import path from 'path'
 
-const getMarkdownMeta = require('.')
+import getMarkdownMeta from './index'
 
 describe('getMarkdownMeta', () => {
   it('should return case-sensitive repo slug', () => {

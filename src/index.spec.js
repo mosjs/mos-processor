@@ -1,10 +1,8 @@
-'use strict'
-const describe = require('mocha').describe
-const it = require('mocha').it
-const expect = require('chai').expect
-const m = require('markdownscript')
-const mos = require('.')
-const plugiator = require('plugiator')
+import {describe, it} from 'mocha'
+import {expect} from 'chai'
+import m from 'markdownscript'
+import mos from './index'
+import * as plugiator from 'plugiator'
 
 describe('mos', () => {
   describe.skip('use', () => {

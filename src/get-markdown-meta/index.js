@@ -1,11 +1,8 @@
-'use strict'
-module.exports = getMarkdownMeta
+import readPkgUp from '@zkochan/read-pkg-up'
+import gh from 'github-url-to-object'
+import path from 'path'
 
-const readPkgUp = require('@zkochan/read-pkg-up')
-const gh = require('github-url-to-object')
-const path = require('path')
-
-function getMarkdownMeta (filePath) {
+export default function getMarkdownMeta (filePath) {
   return readPkgUp({cwd: filePath})
     .then(result => {
       const pkg = result.pkg

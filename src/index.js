@@ -1,11 +1,11 @@
-'use strict'
-const mosCore = require('mos-core')
-const remi = require('remi')
-const hook = require('magic-hook')
-const VFile = require('vfile')
-const getMarkdownMeta = require('./lib/get-markdown-meta')
+import mosCore from 'mos-core'
+import remi from 'remi'
+import remiRunner from 'remi-runner'
+import hook from 'magic-hook/es5'
+import VFile from 'vfile'
+import getMarkdownMeta from './get-markdown-meta'
 
-module.exports = function mos (md, plugins) {
+export default function mos (md, plugins) {
   plugins = plugins || []
   const defaultOpts = {
     listItemIndent: '1',
@@ -44,7 +44,7 @@ module.exports = function mos (md, plugins) {
 function createRegister (processor) {
   const registrator = remi(processor)
   registrator.hook(
-   require('remi-runner')()
+   remiRunner()
   )
   return registrator.register
 }
